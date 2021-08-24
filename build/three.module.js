@@ -35018,7 +35018,7 @@ MeshStandardMaterial.prototype.isMeshStandardMaterial = true;
 
 class MeshPhysicalMaterial extends MeshStandardMaterial {
 
-	#transmission = 0;
+	_transmission = 0;
 
 	constructor( parameters ) {
 
@@ -35076,19 +35076,19 @@ class MeshPhysicalMaterial extends MeshStandardMaterial {
 
 	get transmission() {
 
-		return this.#transmission;
+		return this._transmission;
 
 	}
 
 	set transmission( value ) {
 
-		if ( this.#transmission > 0 !== value > 0 ) {
+		if ( this._transmission > 0 !== value > 0 ) {
 
 			this.version ++;
 
 		}
 
-		this.#transmission = value;
+		this._transmission = value;
 
 	}
 
