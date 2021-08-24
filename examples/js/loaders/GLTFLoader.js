@@ -2525,6 +2525,8 @@
 
 			}
 
+			console.log("We did it");
+			console.debug(sourceURI);
 			const promise = Promise.resolve( sourceURI ).then( function ( sourceURI ) {
 
 				return new Promise( function ( resolve, reject ) {
